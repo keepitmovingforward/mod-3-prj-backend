@@ -5,9 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Match.destroy_all
+Phrase.destroy_all
 
-Phrase.find_or_create_by(content: "A blessing in disguise", category: "Common Phrase")
-Phrase.find_or_create_by(content: "A dime a dozen", category: "Common Phrase")
+phrase1 = Phrase.find_or_create_by(content: "A blessing in disguise", category: "Common Phrase")
+phrase2 = Phrase.find_or_create_by(content: "A dime a dozen", category: "Common Phrase")
 Phrase.find_or_create_by(content: "Beat around the bush", category: "Common Phrase")
 Phrase.find_or_create_by(content: "Better late than never", category: "Common Phrase")
 Phrase.find_or_create_by(content: "Bite the bullet", category: "Common Phrase")
@@ -43,3 +45,7 @@ Phrase.find_or_create_by(content: "We'll cross that bridge when we come to it", 
 Phrase.find_or_create_by(content: "Wrap your head around something", category: "Common Phrase")
 Phrase.find_or_create_by(content: "You can say that again", category: "Common Phrase")
 Phrase.find_or_create_by(content: "Your guess is as good as mine", category: "Common Phrase")
+
+Match.find_or_create_by(phrase: phrase1)
+Match.find_or_create_by(phrase: phrase2)
+Match.find_or_create_by(phrase: phrase1, turns: 15)
