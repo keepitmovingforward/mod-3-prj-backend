@@ -11,7 +11,9 @@ class MatchesController < ApplicationController
   end
 
   def update
-
+    match = Match.find(params[:id])
+    match.update(turns: params[:turns])
+    render json: MatchSerializer.new(match).to_serialized_json
   end
 
 
