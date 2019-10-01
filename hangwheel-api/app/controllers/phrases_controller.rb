@@ -5,4 +5,6 @@ class PhrasesController < ApplicationController
     render json: PhraseSerializer.new(phrases).to_serialized_json
   end
 
+  # def show
+
 end

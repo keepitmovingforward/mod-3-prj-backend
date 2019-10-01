@@ -5,8 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Match.destroy_all
-Phrase.destroy_all
+# Match.destroy_all
+# Phrase.destroy_all
 
 phrase1 = Phrase.find_or_create_by(content: "A blessing in disguise", category: "Common Phrase")
 phrase2 = Phrase.find_or_create_by(content: "A dime a dozen", category: "Common Phrase")
@@ -46,6 +46,17 @@ Phrase.find_or_create_by(content: "Wrap your head around something", category: "
 Phrase.find_or_create_by(content: "You can say that again", category: "Common Phrase")
 Phrase.find_or_create_by(content: "Your guess is as good as mine", category: "Common Phrase")
 
-Match.find_or_create_by(phrase: phrase1)
-Match.find_or_create_by(phrase: phrase2)
-Match.find_or_create_by(phrase: phrase1, turns: 15)
+Match.create(phrase: phrase1, turns: 19, won?: true)
+Match.create(phrase: phrase2, turns: 14, won?: false)
+Match.create(phrase: phrase1, turns: 10, won?: true)
+Match.create(phrase: phrase1, turns: 20, won?: true)
+Match.create(phrase: phrase1, turns: 15, won?: true)
+Match.create(phrase: phrase1, turns: 10, won?: true)
+Match.create(phrase: phrase1, turns: 11, won?: true)
+Match.create(phrase: phrase1, turns: 13, won?: true)
+Match.create(phrase: phrase1, turns: 15, won?: true)
+Match.create(phrase: phrase1, turns: 15, won?: true)
+Match.create(phrase: phrase1, turns: 17, won?: true)
+Match.create(phrase: phrase1, turns: 19, won?: true)
+Match.create(phrase: phrase1, turns: 20, won?: true)
+Match.create(phrase: phrase1, turns: 11, won?: true)
