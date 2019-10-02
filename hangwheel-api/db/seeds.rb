@@ -8,6 +8,50 @@
 # Match.destroy_all
 # Phrase.destroy_all
 
+
+
+Phrase.create(content: "American Idol", category: "TV Show")
+Phrase.create(content: "The Good Place!", category: "TV Show")
+Phrase.create(content: "Storage Wars", category: "TV Show")
+Phrase.create(content: "The Big Bang Theory", category: "TV Show")
+Phrase.create(content: "The Vampire Diaries", category: "TV Show")
+Phrase.create(content: "Stranger Things", category: "TV Show")
+
+Phrase.create(content: "Blowing Up Balloons", category: "Fun & Games")
+Phrase.create(content: "Dodge Ball", category: "Fun & Games")
+Phrase.create(content: "Computer Solitaire", category: "Fun & Games")
+Phrase.create(content: "Arm Wrestling", category: "Fun & Games")
+
+Phrase.create(content: "Walking On Sunshine", category: "Song Title")
+Phrase.create(content: "Winter Wonderland", category: "Song Title")
+Phrase.create(content: "Almost Famous", category: "Movie Title")
+Phrase.create(content: , category: "Movie Title")
+Phrase.create(content: , category: "Movie Title")
+Phrase.create(content: , category: "Movie Title")
+Phrase.create(content: , category: "Movie Title")
+Phrase.create(content: , category: "Movie Title")
+
+Phrase.create(content: "", category: "")
+Phrase.create(content: "", category: "")
+Phrase.create(content: "", category: "")
+
+
+
+
+
+Ice Age
+Caddyshack
+Zootopia
+Pitch Perfect
+Parent Trap
+Magic Mike
+The Matrix
+
+
+
+
+
+
 phrase1 = Phrase.find_or_create_by(content: "A blessing in disguise", category: "Common Phrase")
 phrase2 = Phrase.find_or_create_by(content: "A dime a dozen", category: "Common Phrase")
 Phrase.find_or_create_by(content: "Beat around the bush", category: "Common Phrase")
