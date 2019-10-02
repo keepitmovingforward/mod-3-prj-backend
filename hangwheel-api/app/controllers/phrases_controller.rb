@@ -1,12 +1,9 @@
 class PhrasesController < ApplicationController
 
   def index
-    # byebug
-    category = params[:category_name]
+    category = params[:body][:category_name]
 
     phrases = filter_by_category(category)
-    # phrases = Phrase.all
-
     render json: PhraseSerializer.new(phrases).to_serialized_json
   end
 
@@ -18,7 +15,7 @@ class PhrasesController < ApplicationController
 
   def categorize
     category = params[:category]
-    
+
   end
 
 private

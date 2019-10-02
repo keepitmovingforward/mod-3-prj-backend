@@ -25,27 +25,27 @@ Phrase.create(content: "Arm Wrestling", category: "Fun & Games")
 Phrase.create(content: "Walking On Sunshine", category: "Song Title")
 Phrase.create(content: "Winter Wonderland", category: "Song Title")
 Phrase.create(content: "Almost Famous", category: "Movie Title")
-Phrase.create(content: , category: "Movie Title")
-Phrase.create(content: , category: "Movie Title")
-Phrase.create(content: , category: "Movie Title")
-Phrase.create(content: , category: "Movie Title")
-Phrase.create(content: , category: "Movie Title")
-
-Phrase.create(content: "", category: "")
-Phrase.create(content: "", category: "")
-Phrase.create(content: "", category: "")
-
-
-
-
-
-Ice Age
-Caddyshack
-Zootopia
-Pitch Perfect
-Parent Trap
-Magic Mike
-The Matrix
+# Phrase.create(content: , category: "Movie Title")
+# Phrase.create(content: , category: "Movie Title")
+# Phrase.create(content: , category: "Movie Title")
+# Phrase.create(content: , category: "Movie Title")
+# Phrase.create(content: , category: "Movie Title")
+#
+# Phrase.create(content: "", category: "")
+# Phrase.create(content: "", category: "")
+# Phrase.create(content: "", category: "")
+#
+#
+#
+#
+#
+# Ice Age
+# Caddyshack
+# Zootopia
+# Pitch Perfect
+# Parent Trap
+# Magic Mike
+# The Matrix
 
 
 
